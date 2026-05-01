@@ -25,13 +25,13 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full shadow-md">
-      <div className="flex justify-between items-center p-6 md:px-10">
+    <header className="fixed top-0 left-0 h-20 z-30 bg-white/90 backdrop-blur-md w-full shadow-md">
+      <div className="flex justify-between items-center h-full p-6 md:px-28">
         <a href="#" className="text-xl font-bold">
-          DF
+          DFARM
         </a>
 
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6 text-lg">
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -85,7 +85,7 @@ const Header = () => {
         {/* Overlay */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/50"
+            className="fixed inset-0 bg-black/60 z-40 md:bg-black/50"
             onClick={() => setIsOpen(false)}
           ></div>
         )}
