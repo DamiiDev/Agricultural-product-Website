@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 h-20 z-30 bg-white/90 backdrop-blur-md w-full shadow-md">
       <div className="flex justify-between items-center h-full p-6 md:px-28">
-        <a href="#" className="text-xl font-bold">
+        <a href="#" className="text-xl font-bold text-blue-500">
           DFARM
         </a>
 
