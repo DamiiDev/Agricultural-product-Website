@@ -26,13 +26,20 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 h-20 z-30 bg-white/90 backdrop-blur-md w-full shadow-md">
+      <header className="fixed top-0 left-0 h-20 z-30 bg-white backdrop-blur-md w-full shadow-md">
         <div className="flex justify-between items-center h-full p-6 md:px-28">
-          <a href="#" className="text-xl font-bold text-blue-500">
+          <a
+            href="#"
+            className="text-xl font-bold text-green-500 md:text-2xl"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+          >
             DFARM
           </a>
 
-          <nav className="hidden md:flex gap-6 text-lg">
+          <nav
+            className="hidden md:flex gap-6 text-lg"
+            style={{ fontFamily: "'Inter', sans-serif" }}
+          >
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -71,7 +78,10 @@ const Header = () => {
           />
         </div>
 
-        <div className="flex flex-col px-6 gap-4 text-lg font-medium cursor-pointer">
+        <div
+          className="flex flex-col px-6 gap-4 text-lg font-medium cursor-pointer"
+          style={{ fontFamily: "'Inter', sans-serif" }}
+        >
           {[
             "Home",
             "About",
